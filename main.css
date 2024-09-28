@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    width: 85%;
+    margin-top: 30px;
+    padding: 35px 0;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+
+
+
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: blue;
+    text-transform:uppercase;
+}
+
+
+a:visited{
+    color: yellow;
+}
+
+
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+.body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: #ccccfc; 
+    color: #333;  
+}
+
+
+.section{
+    width: 80%;
+    margin: auto;
+    margin: 20px 0;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    word-spacing: 1em;
+    text-align: center;
+}
+
+  
+body{
+    background-image: url('/Image2.jpg');
+    background-size: 100%;     
+    color: #fff;
+    line-height:1.6em;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+
+
+
+.getstarted{
+    color:paleturquoise;    
+}
+
+.button{
+    background-color: rgb(77, 182, 243);
+    color: #333;
+    margin:40px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    border-radius: 7px;
+    text-decoration: none;
+    border: 1.5px solid rgb(77, 182, 243);
+    box-shadow: 10px;
+    border-radius: 6px;
+    width: 50%;
+  }
+
+
+form .form-control input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding:  15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid rgb(77, 182, 243);
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+
+.form-control input:focus,
+.form-control input:valid{
+    border-color: rgb(77, 182, 243);
+}
+
+
+form{
+    color:  black;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px; 
+}
+
+
+.input-box.button input:hover{
+    background: rgb(77, 182, 243);
+    }
+    
+    
+    form .text{
+        color: #333;
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    form .text{
+    color: #333;
+    text-decoration: none;
+    }
+    form .text h3:hover{
+        text-decoration: none;
+    }
+
+
+    
+.heading{
+    padding: 20px;
+    margin: 20px;
+    color: rgb(77, 182, 243);
+}
+
+
+#logoutBtn {
+    background-color: rgb(77, 182, 243);
+    color: #333;
+    margin:20px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    border-radius: 7px;
+    text-decoration: none;
+    border: 1.5px solid rgb(77, 182, 243);
+    box-shadow: 10px;
+    border-radius: 4px;
+    width: 60%;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
+
+.footer {
+    
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+    position: relative;
+    bottom: 0;
+    width: 100%; 
+    font-family: Arial, sans-serif;
+}
+
+.footer h3 {
+    font-size: 18px; 
+    margin: 0; 
+    font-weight: normal; 
+}
+
+.footer p {
+    font-size: 14px; 
+    margin: 5px 0 0; 
+    color: #ccc; 
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 8px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .section {
+        width: 95%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    .button {
+        width: 85%;
+    }
+
+    #logoutBtn {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
